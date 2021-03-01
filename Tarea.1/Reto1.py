@@ -2,7 +2,7 @@
 """
 Created on Tue Feb 16 14:46:49 2021
 
-@author: manue
+@author: denis
 """
 from random import random, randint
 import matplotlib.pyplot as plt 
