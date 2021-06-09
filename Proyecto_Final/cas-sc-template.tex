@@ -23,7 +23,8 @@
 %\usepackage[numbers]{natbib}
 %\usepackage[authoryear]{natbib}
 \usepackage[authoryear,longnamesfirst]{natbib}
-
+\usepackage[spanish]{babel}
+\usepackage [utf8] {inputenc}
 %%%Author macros
 \def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
 \tsc{WGM}
@@ -35,25 +36,25 @@
 %%%
 
 \begin{document}
-
-\title [mode = title]{Simulación de Nanotransportador de Titanio con Nanofibras Polimericas de liberación controlada para Vitiligo}                      
+\shorttitle{Simulación de nanoportadores TNT}
+\title [mode = title]{Simulación de Nanotransportador de Titanio con Nanofibras Polimericas de liberación controlada para Vitiligo}      \shortauthors{Denisse Leyva.}              
 
 
 
 
 \author[1,3]{Denisse Leyva}[type=editor,
-                        auid=,
-                        prefix=,
-                        role=,
-                        orcid=0000-0001-7511-2910]
+                        role=Estudiante,
+                        orcid=0000-0001-8111-0604]
 \cormark[1]
 \fnmark[1]
-\ead{cvr_1@tug.org.in}
-\ead[url]{www.cvr.cc, cvr@sayahna.org}
+\ead{denisse.leyvacs@uanl.edu.mx}
+
 
 \credit{Conceptualization of this study, Methodology, Software}
 
-\address[1]{Facultad de Ingenieria Mecánica y Eléctrica}
+\address[1]{Posgrado en Ciencias de la Ingeniera con Orientación en Nanotecnología}
+\address[2]{Facultad de Ingenieria Mecánica y Eléctrica}
+\address[3]{Universidad Autónoma de Nuevo León.}
 
 
 
@@ -70,7 +71,7 @@ nanotransportador \sep nanofibras \sep Vitiligo \sep \BEC
 \maketitle
 
 
-\section{Introduction}
+\section{Introducción}
 Las enfermedades de la piel son las cuartas afecciones cutáneas no mortales más importantes que actúan como una carga y afectan la economía mundial a nivel mundial. Esta condición afecta la calidad de vida del paciente y tiene un impacto pronunciado tanto en su estado físico como mental. El tratamiento de estas afecciones de la piel con enfoques convencionales muestra falta de eficacia, larga duración del tratamiento, recurrencia de afecciones, efectos secundarios sistémicos, etc., debido a la administración inadecuada del fármaco. Sin embargo, estos escollos pueden superarse con las aplicaciones de enfoques basados en nanomedicina que proporcionan una administración eficaz de fármacos en un sitio específico en el sitio objetivo. Estas estrategias basadas en nanomedicina evolucionan como posibles oportunidades de tratamiento en forma de nanoportadores, como nanoportadores poliméricos y lipídicos, nanoemulsiones y otros emergentes, nanotubos de carbono para tratamiento dermatológico. 
 
 La liberación de medicamento de forma eficiente y localizada se ha convertido en uno de los retos mas importantes a resolver en nuestra sociedad actual. Se han evalúado numerosas alternativas en la aplicación de medicamento tales como la vía tópica, oftálmica, sublingual, transdermal, ótica, rectal y vaginal; teniendo distintos niveles de efectividad dependiendo del tipo de padecimiento a tratar. Pero todos ellos sin excepción adolecen de una falta de localización y programación en la aplicación del medicamento. Debido a lo anterior las mencionadas vías de administración de medicamento continúan provocando efectos secundarios que disminuyen la calidad de vida del paciente y lo llevan en situaciones extremas a abandonar el tratamiento prescrito por el médico. En este contexto, los científicos especializados en nanotecnología en conjunto con los profesionales de la salud han propuesto nuevos sistemas de liberación con la habilidad de transportar el medicamento a través del cuerpo y liberarlo de manera precisa y controlada en la zona afectada por un determinado padecimiento. Entre los sistemas nanoestructurados que se han utilizado en la administración controlada de medicamento se encuentran las nanopartículas, nanotubos, nanofibras y nanoesferas. Sin embargo, la tendencia mundial actual es elevar la sofisticación de estos materiales nanoestructurados en aras de incrementar su nivel de localización y programación en la liberación controlada de medicamentos.
@@ -82,8 +83,7 @@ En este sentido se han diseñado nanocompósitos que han combinado las propiedad
 Las nanofibras poliméricas son un tipo de nanoestructura 1D que tienen una relación area superficial contra volumen elevada, con diámetros que van de los 50 nm a los 500 nm en comparación con un largo reportado hasta los 1000 m1. Las nanofibras poliméricas tienen la particularidad de contar con una gran versatilidad de síntesis y de aplicaciones. Para producir las nanofibras poliméricas se han utilizado una variedad de técnicas incluyendo la separación de fases, el hilado por centrifuga, estiramiento, templete, autoensamblaje y el electrohilado (figura 1). De todas las técnicas mencionadas el electrohilado es por mucho la técnica mas utilizada en la fabricación de nanofibras poliméricas debido sobre todo a su sencillez y versatilidad.
 
 
-
-Las nanofibras electrohiladas poliméricas han sido aprovechadas en la encapsulación y liberación de una variedad de medicamentos y sustancias terapéuticas a lo largo de la última década (tabla 1). Lo anterior debido a sus propiedades únicas de modulación de liberación a través de una variedad de morfologías obtenidas por medio de la modulación y control de los parámetros de solución y operación de la técnica de electrohilado. El diámetro de las NPE sintetizadas se debe de mantener lo mas delgado posible, esto debido a la relación reportada entre un diámetro pequeño de las nanofibras y una mayor rapidez en la liberación del medicamento. Otro factor a tomar en cuenta es la porosidad de los materiales nanofibrosos resultantes, dado que incide directamente en el perfil de liberación resultante.
+Las nanofibras electrohiladas poliméricas han sido aprovechadas en la encapsulación y liberación de una variedad de medicamentos y sustancias terapéuticas a lo largo de la última década. Lo anterior debido a sus propiedades únicas de modulación de liberación a través de una variedad de morfologías obtenidas por medio de la modulación y control de los parámetros de solución y operación de la técnica de electrohilado. El diámetro de las NPE sintetizadas se debe de mantener lo mas delgado posible, esto debido a la relación reportada entre un diámetro pequeño de las nanofibras y una mayor rapidez en la liberación del medicamento. Otro factor a tomar en cuenta es la porosidad de los materiales nanofibrosos resultantes, dado que incide directamente en el perfil de liberación resultante.
 
 Las nanofibras electrohiladas poliméricas se han utilizado en un amplio rango de aplicaciones tales como la filtración, sensado, aplicaciones electrónicas, catálisis, vendaje de heridas, ropa para protección química y biológica. Sin embargo es en el campo de la biotecnología donde las nanofibras electrohiladas poliméricas han encontrado sus aplicaciones más interesantes y relevantes desde el punto de vista científico, como la ingeniería de tejidos, órganos artificiales, la inmovilización de sustancias de interés biológico y la encapsulación y posterior liberación de medicamento y sustancias terapéuticas. Es en esta última aplicación biotecnológica de las NPE donde este proyecto propone ahondar mas en el estudio sistemático de las interacciones de las diferentes configuraciones y parámetros del sistema de electrohilado con la distribución de los medicamentos y sustancias terapéuticas a lo largo de los materiales nanofibrosos resultantes.
 
@@ -99,9 +99,7 @@ Las nanofibras electrohiladas poliméricas se han utilizado en un amplio rango d
 Para esta simulación se tomaron en cuenta dos métodos diferentes (Sistema Multiagente e Interacciones entre partículas) que al utilizarse en conjunto nos acercan al objetivo deseado, se opto por esos métodos ya que el sistema multiagente representa el cambio de estado de las partículas y la interaccion entre partículas representa la acción que genera un choque de partículas.
 
 \subsection{Sistema Multiagente}
-El dominio del sistema multiagente o de inteligencia artificial distribuida es una ciencia y una técnica que trata con los sistemas de inteligencia artificial en red. El bloque fundamental de construcción de un sistema multiagente, como es de esperarse, son los agentes.
-
-Aunque no existe una definición formal y precisa de lo que es un agente, estos son por lo general vistos como entidades inteligentes, equivalentes en términos computacionales a un proceso del sistema operativo, que existen dentro de cierto contexto o ambiente, y que se pueden comunicar a través de un mecanismo de comunicación ínter proceso, usualmente un sistema de red, utilizando protocolos de comunicación.
+El dominio del sistema multiagente o de inteligencia artificial distribuida es una ciencia y una técnica que trata con los sistemas de inteligencia artificial en red. El bloque fundamental de construcción de un sistema multiagente, como es de esperarse, son los agentes. Aunque no existe una definición formal y precisa de lo que es un agente, estos son por lo general vistos como entidades inteligentes, equivalentes en términos computacionales a un proceso del sistema operativo, que existen dentro de cierto contexto o ambiente, y que se pueden comunicar a través de un mecanismo de comunicación ínter proceso, usualmente un sistema de red, utilizando protocolos de comunicación.
 
 En cierto modo, un sistema multiagente es un sistema distribuido en el cual los nodos o elementos son sistemas de inteligencia artificial, o bien un sistema distribuido donde la conducta combinada de dichos elementos produce un resultado en conjunto inteligente.
 
@@ -113,42 +111,43 @@ Sin embargo, hay más posibilidades: las partículas también pueden hacer todo 
 Hay momentos en que las partículas, en vez de atraerse o repelerse, forman un inesperado complejo estable que puede romperse bajo suficientes perturbaciones o agitaciones.
 
 
-
-
-
-
 \section{Criterios de Interacción}
-Se escogieron tres estímulos para que el nanoportador libere el fármaco.
-
-\begin{itemize}
-  \item Temperatura
-  \item PH
-  \item Anticuerpos
-\end{itemize}
+Se escogio un estimulo externo (temperatura) para que el fármaco se liberara epecificamente en el área de interes, dando esto una cierta programación al nanoportador para una liberación específica y eficiente, a demas se uso el PH como un atrayente del fármaco para controlar el deposito del mismo en la celula afectada. 
 
 Cuando el fármaco llegue a una temperatura diferente al ambiente el nanoportador entendera que es momento de liberar el fármaco sin afectar el ambiente externo a esa temperatura.
 
+Esta metodología propone una liberación de fármaco precisa y eficaz ya que el fármaco solo se esta usando en la celula afectada dejando todo lo demas sin rastro de medicación.
 
-%\begin{table}[width=.9\linewidth,cols=4,pos=h]
-%\caption{This is a test caption. This is a test caption. This is a test
-%caption. This is a test caption.}\label{tbl1}
-%\begin{tabular*}{\tblwidth}{@{} LLLL@{} }
-%\toprule
-%Col 1 & Col 2 & Col 3 & Col4\\
-%\midrule
-%12345 & 12345 & 123 & 12345 \\
-%12345 & 12345 & 123 & 12345 \\
-%12345 & 12345 & 123 & 12345 \\
-%12345 & 12345 & 123 & 12345 \\
-%12345 & 12345 & 123 & 12345 \\
-%\bottomrule
-%\end{tabular*}
-%\end{table}
+Ademas se tomo la precacución de simular unicamente un descenso de nanotransportador para que no salga de la piel hacia alguna otra zona, de igual manera se dio un parametro en el cual la celula debe tomar una cantidad especifica (3 particulas de fármaco) de medicamento para poder curarse. 
+
 
 \section{Resultados y Discusión}
+Se realizó una simulación donde se tienen 10 nanoportadores y cada uno de ellos tiene 25 particulas de fármaco en su ineterior, estos viven en un ambiente donde hay 50 celulas de las cuales 15\% se encuentran dañadas y necesitan el fármaco para poder curarse. Las células dañadas emiten una temperatura diferente esto debido a su estado, a demas muestran un PH diferente al de las celulas sanas que las identifica, se utilizan estas propiedades que las catacterizan para poder dar intrucciones (programar)  al nanoportador.
 
+ Las celulas aprecen uniformemente distribuidas sobre el area mostrada con movimiento uniformemte aleatorio que trata de replicar el movimiento natural que tendria una celula dentro del cuerpo, es decir no se encuentran fijas para que nanoportador no tenga una ruta especifica de liberación si no siga los estuimulos externos antes mencionados. 
 
+El nanotransportador aparece uniformemente distribuido sobre el area del parche en esteos ses encuentran lso fármacos uniformemete distribuidos en el area interna del nanotransportador. Estos se mueven con el nanotransportador en la misma dirección y al momento de ser liberados cada partícula del fármaco toma movimientos aleatorios pero tomando en cuenta la atracción hacia la célula. 
 
+En la gráfica 1 se muestran los porcentajes, que para el caso de la célula es el porcentaje de células curadas, tomando en cuenta solo el numero de celulas infectadas y no el total, y para el nanotransportador se tomo el porcentaje de la liberación.
+
+Podemos observar que el porcentaje de las células curadas tiende a un rango entre 90 y 100\% de eficiencia y para el caso de la liberación el porcenta se encuentra entre 70 y 90\%.
+Mostrando con estos datos que no se ocupan el 100\% de los nanotransportadores para tener una efectividad alta. 
+
+Se realizaron dos gif para observar el comportamiento antes mencionado, se encuentra en el Github.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=.30]{figs/p_t0.png}
+	\caption{Simulador de liberación de fármaco a)primer escena donde los nanoportadores apenas seran lanzados al ambiente. b)Los nanoportadores estan preparados para liberar el fármaco en el lugar indicado.}
+	\label{FIG:1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=.30]{figs/p_t0.png}
+	\caption{Simulador de liberación de fármaco a)primeras liberación de fármacos gracias a la presencia de una temperatura diferente. b)La mayoria de los nanotranportadores pudieron liberar su fármaco y la mayoria de las células infectadas pudieron curarse..}
+	\label{FIG:1}
+\end{figure}
 
 %% Loading bibliography style file
 %\bibliographystyle{model1-num-names}
